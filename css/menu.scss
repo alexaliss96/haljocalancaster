@@ -1,0 +1,186 @@
+#mainnav {
+  background-color: none;
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+
+    li {
+      padding: 0;
+    }
+  }
+
+}
+
+#mainnav {
+  // ...existing styles
+
+  > ul {
+    grid-auto-flow: column;
+
+    > li {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+// Clear native browser button styles
+.dropdown_title {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+#mainnav {
+  > ul {
+
+    > li {
+      // All links contained in the li
+      a,
+      .dropdown_title {
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        color: blue;
+        font-size: 1.5rem;
+      }
+      
+      // Only direct links contained in the li
+      > a,
+      .dropdown_title {
+        padding: 1rem 0.5rem;
+      }
+
+    }
+  }
+}
+
+
+#mainnav {
+
+.dropdown {
+  position: relative;
+
+  .dropdown_menu {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+    padding: 0.5em 0;
+    min-width: 15ch;
+
+    a {
+      color: #444;
+      display: block;
+      padding: 0.5em;
+    }
+  }
+}
+
+.dropdown_menu {
+  // ... existing styles
+
+  position: absolute;
+
+  // Pull up to overlap the parent list item very slightly
+  top: calc(100% - 0.25rem);
+  // Use the left from absolute position to shift the left side
+  left: 50%;
+  // Use translateX to shift the menu 50% of it's width back to the left 
+  transform: translateX(-50%);
+}
+
+.dropdown_menu {
+  // ... existing styles
+  transform: rotateX(-90deg) translateX(-50%);
+  transform-origin: top center;
+  opacity: 0.3;
+}
+
+.dropdown_menu {
+  // ... existing styles
+  transition: 280ms all ease-out;
+}
+
+.dropdown {
+  // ... existing styles
+
+  &:hover,
+  &:focus-within {
+
+    .dropdown_menu {
+      opacity: 1;
+      transform: rotateX(0) translateX(-50%);
+      visibility: visible;
+    } 
+
+  }
+
+}
+
+.dropdown {
+  // ... existing styles
+
+    .dropdown_title {
+      display: inline-flex;
+      align-items: center;
+
+      &:after {
+        content: "";
+        border: 0.35rem solid transparent;
+        border-top-color: rgba(blue, 0.45);
+        margin-left: 0.25em;
+        transform: translateY(0.15em);
+      }
+    }
+
+    } }
+
+//previous-----------------------------------------------------------------------------------
+
+//#mainnav{
+//
+//li {
+// display: block;
+// transition-duration: 0.5s;
+//}
+//
+//li:hover {
+//  cursor: pointer;
+//}
+//
+//ul li ul {
+//  visibility: hidden;
+//  opacity: 0;
+//  position: absolute;
+//  transition: all 0.5s ease;
+//  margin-top: 1rem;
+//  left: 0;
+//  display: none;
+//}
+//
+//ul li:hover > ul,
+//ul li ul:hover {
+//  visibility: visible;
+//  opacity: 1;
+//  display: block;
+//}
+//
+//ul li ul li {
+//  clear: both;
+//  width: 100%;
+//}
+//    
+//    ul li:hover > ul,
+//ul li:focus-within > ul,
+//ul li ul:hover {
+//  visibility: visible;
+//  opacity: 1;
+//  display: block;
+//}       
+//    
+//}

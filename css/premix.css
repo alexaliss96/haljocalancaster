@@ -1,0 +1,53 @@
+#premixOverlay {
+	background-color: #18191B;
+	z-index:1000000;
+	position: absolute;
+	-webkit-background-size: 100% !important;
+-moz-background-size: 100% !important;
+-o-background-size: 100% !important;
+background-size: 100% !important;
+	
+	background-position: top;
+}
+#premixSlide{
+	font-size:22px;
+	color:#ccc;
+	text-align:center;
+	width:50%;
+	height:30%;
+}
+#premixLoader{
+	width: 400px;
+	height: 2px;
+	background-color: #18191B;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+
+#premixBar {
+	background-color:#FF6621;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+}
+
+#premixPercentage {
+	color:#242424;
+	z-index:-1;
+	font-family:'Raleway',Helvetica,sans-serif;
+	text-align:center;
+	margin-top:10px;
+	font-size:96px;
+	margin-top:-10px;
+}
+
+#premixchamber{
+	line-height:200%;
+}
+
+#premixchamber section{
+	padding:0;
+	display:block;
+	background:none !important;
+}

@@ -1,0 +1,247 @@
+.menu-collapser {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding: 0 8px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 48px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.collapse-button {
+	position: absolute;
+	right: 8px;
+	top: -50px;
+	width: 40px;
+	padding: 10px 10px 10px 11px ;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	background-color: #FF6621;
+	border-radius: 2px;
+	cursor: pointer;
+	transform: translate(0,  -50%);
+	-o-transform: translate(0,  -50%);
+	-ms-transform: translate(0,  -50%);
+	-moz-transform: translate(0,  -50%);
+	-webkit-transform: translate(0,  -50%);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.collapse-button:hover, .collapse-button:focus {
+    color: #FFF;
+    background-color: #18191B;
+}
+.collapse-button .icon-bar {
+    display: block;
+    height: 2px;
+    width: 18px;
+    margin: 4px 0;
+    background-color: #FFF;
+    border-radius: 1px;
+}
+ul.slimmenu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.slimmenu:before, ul.slimmenu:after {
+    content: '';
+    display: table;
+}
+ul.slimmenu:after {
+    clear: both;
+}
+ul.slimmenu.collapsed li {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul.slimmenu.collapsed li>ul {
+    position: static;
+    display: none;
+}
+ul.slimmenu.collapsed li a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul.slimmenu.collapsed li .sub-toggle {
+    height: 20px;
+	
+}
+
+ul.slimmenu li.selected{
+	 margin-left: 10px;}
+	 
+	 
+ul.slimmenu li.selected.normal{
+	 margin-left: 0px;}
+
+ul.slimmenu li a.selected{
+	 padding: 15px 25px 15px 15px;
+	
+	
+	background: #ff6621;
+	color:#fff;}
+
+
+ul.slimmenu li a.selected.normal{
+	 padding: 15px;
+	
+	
+	background: #ff6621;
+	color:#fff;}
+	
+	ul.slimmenu li a:hover.selected{
+	
+	color:#fff;}
+	
+	ul.slimmenu li a:hover{
+	
+	color:#FF6621;}
+	
+ul.slimmenu li {
+    position: relative;
+    float: left;
+    display: inline-block;
+    background-color: transparent;
+}
+ul.slimmenu li ul {
+    margin: 0;
+    list-style-type: none;
+}
+ul.slimmenu li ul li {
+    background: #FFF;
+	width:150px;
+}
+ul.slimmenu li ul li a:hover {
+    background: #FF6621;
+	color:#FFF;
+}
+ul.slimmenu li>ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    display: none;
+    }
+ul.slimmenu li>ul>li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 999;
+
+    display: none;
+    width: 100%}
+ul.slimmenu li a {
+    display: block;
+    padding: 15px;
+	
+    color: #18191B;
+    font-size: 14px;
+   
+    transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+}
+ul.slimmenu li a:hover {
+    
+	color:#FF6621;
+    
+	
+}
+ul.slimmenu li .sub-toggle {
+   
+   
+    right: 0;
+    top: 0;
+  
+    width: 48px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+		position:absolute;
+	z-index:-10;
+}
+
+ul.slimmenu li.selected .sub-toggle {
+    
+
+ 
+	position:absolute;
+	z-index:1000;
+	
+	
+}
+
+
+ul.slimmenu li .sub-toggle:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: 2.5em;
+    vertical-align: middle;
+}
+ul.slimmenu li .sub-toggle>i {
+    display: inline-block;
+    color: #FF6621;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+
+
+ul.slimmenu li.selected .sub-toggle>i {
+    display: inline-block;
+    color: #FFF;
+    font-size: 10px;
+	margin-left:-10px;
+    vertical-align: middle;
+	
+	
+	
+}
+
+ul.slimmenu>li:first-child, ul.slimmenu>li.has-submenu+li {
+    border-left: 0;
+}
+@media only screen and (max-width: 992px) {
+ul.slimmenu li .sub-toggle>i {
+  
+	margin-left:-10px;
+
+}
+
+ul.slimmenu li .sub-toggle {
+    z-index: 999;
+   
+}
+
+ul.slimmenu li.selected .sub-toggle {
+    margin-right:10px;
+   
+}
+
+ul.slimmenu li a.selected.singletary{
+	 
+	 margin-left:0px;}
+	 
+	 ul.slimmenu li a.selected{
+	 
+	 margin-left:-10px;}
+	 ul.slimmenu li a.selected{
+	 padding-left:25px;
+	
+}
+	 }
